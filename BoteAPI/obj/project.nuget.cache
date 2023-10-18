@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "862u9JqrC4D2L4USGaQe/p6dZKAlIh5o9u7/tVEIsSVs20LTDgyTy4eaFDYtpkXQj4pNzuO3Pvj8cN0kaPqISA==",
+  "success": true,
+  "projectFilePath": "C:\\GitHub\\GustavoBotejara\\.NET API\\BoteAPI\\BoteAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\m8dev\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\m8dev\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\m8dev\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.4\\swashbuckle.aspnetcore.6.1.4.nupkg.sha512",
+    "C:\\Users\\m8dev\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.4\\swashbuckle.aspnetcore.swagger.6.1.4.nupkg.sha512",
+    "C:\\Users\\m8dev\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.4\\swashbuckle.aspnetcore.swaggergen.6.1.4.nupkg.sha512",
+    "C:\\Users\\m8dev\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.4\\swashbuckle.aspnetcore.swaggerui.6.1.4.nupkg.sha512"
+  ],
+  "logs": []
+}
