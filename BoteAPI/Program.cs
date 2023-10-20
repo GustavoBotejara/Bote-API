@@ -4,12 +4,23 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("Botes") ?? "Data Source=Botes.db";
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSqlite<BoteDb>(connectionString);
 builder.Services.AddSwaggerGen(bote =>
 {
 bote.SwaggerDoc("v1", new OpenApiInfo { Title = "Bote API", Description = "Keep track of your tasks", Version = "v1" });
+});
+
+string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+      builder =>
+      {
+          builder.WithOrigins(
+            "*");
+      });
 });
 
 var app = builder.Build();
@@ -19,6 +30,8 @@ app.UseSwaggerUI(bote =>
 {
     bote.SwaggerEndpoint("/swagger/v1/swagger.json", "Bote API V1");
 });
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.MapGet("/", () => "Type '/swagger' at the end of the url");
 
